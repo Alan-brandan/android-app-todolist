@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/App_Background"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agregar una tarea nueva"
+        android:textColor="#292929"
+        android:textColorHint="#676767"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/etTaskdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripcion (opcional)"
+        android:textColor="#292929"
+        android:textColorHint="#676767"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/rgCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal"
+            android:textColor="#292929"
+            android:textSize="18sp"
+            android:checked="true"
+            android:buttonTint="@color/App_MainColor"/>
+        <RadioButton
+            android:id="@+id/rbWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trabajo"
+            android:textColor="#292929"
+            android:textSize="18sp"
+            android:buttonTint="@color/App_MainColor"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Tarea"
+        android:backgroundTint="@color/App_MainColor"/>
+
+</LinearLayout>
